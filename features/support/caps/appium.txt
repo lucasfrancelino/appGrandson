@@ -1,0 +1,13 @@
+[caps]
+
+platformName = "Android"
+deviceName = "192.168.45.101:5555"
+noReset = "true"
+fullReset = "false"
+noReset = "true"
+autoGrantPermissions = "true"
+appWaitForLaunch = "false"
+app = "C:\\@automacao\\grandson.apk"
+appPackage = "com.example.grandson"
+automationName = "uiautomator2"
+newCommandTimeout = "60"
