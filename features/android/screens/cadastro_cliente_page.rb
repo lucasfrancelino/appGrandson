@@ -27,6 +27,22 @@ class CadastroCliente
         sleep 3
     end
 
+    def cliente_fisico
+        find_element(xpath: @nomeInput).send_keys("Lucas Francelino")
+        find_element(xpath: @email).send_keys("lucas@gamil.com")
+        find_element(xpath: @telefone).send_keys("61985934110")
+        find_element(xpath: @senha1).send_keys("12345678")
+        find_element(xpath: @senha2).send_keys("12345678")
+        find_element(xpath: @btnAvancar).click
+        find_element(xpath: @cep).send_keys("72231609")
+        scroll_to("Complemento", scrollable_index = 0)
+        find_element(xpath: @numeroCasa).click
+        find_element(xpath: @numeroCasa).send_keys("883")
+        find_element(xpath: @complemento).send_keys("Teste de software automatizado")
+        find_element(xpath: @btnAvancar).click
+        sleep 5
+    end
+
     def cadastrar_dados_cliente
         find_element(xpath: @nomeInput).send_keys Faker::Games::Pokemon.name
         find_element(xpath: @email).send_keys Faker::Internet.email
@@ -53,7 +69,21 @@ class CadastroCliente
         sleep 3
     end
 
-
+    def cadastro_incorreto(nome, email, telefone, senha1, senha2, cep, numero, complemento)
+        find_element(xpath: @nomeInput).send_keys(nome)
+        find_element(xpath: @email).send_keys(email)
+        find_element(xpath: @telefone).send_keys(telefone)
+        find_element(xpath: @senha1).send_keys(senha1)
+        find_element(xpath: @senha2).send_keys(senha2)
+        find_element(xpath: @btnAvancar).click
+        find_element(xpath: @cep).send_keys(cep)
+        scroll_to("Complemento", scrollable_index = 0)
+        find_element(xpath: @complemento).click
+        find_element(xpath: @numeroCasa).send_keys(numero)
+        find_element(xpath: @complemento).send_keys(complemento)
+        find_element(xpath: @btnAvancar).click
+        sleep 5
+    end
 
 
 
