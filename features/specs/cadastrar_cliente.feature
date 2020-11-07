@@ -18,7 +18,7 @@ Cenario: Cadastro de cliente fake
     Dado que eu acesso a tela de Cadastro
     Quando informo os dados pessoais fake
     E informo os dados de pagamento de um cartao de credito
-    Entao vejo na tela de Home os parceiros disponiveis    
+    Entao vejo na tela de Home os parceiros disponiveis
 
 # @cadastroErrado
 # Esquema do Cenario: Cadastro de cliente incorretos

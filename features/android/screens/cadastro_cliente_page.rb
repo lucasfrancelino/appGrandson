@@ -85,6 +85,10 @@ class CadastroCliente
         sleep 5
     end
 
-
+    def avancar
+        find_element(xpath: @btnAvancar).click
+        sleep 5
+    end
+    
 
 end

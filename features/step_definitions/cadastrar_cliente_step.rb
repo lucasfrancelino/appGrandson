@@ -16,7 +16,8 @@ Dado('que eu acesso a tela de Cadastro') do
   end
   
   Entao('vejo na tela de Home os parceiros disponiveis') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @clliente.avancar
+    #app com erro, quando termina o cadastro ele volta pra a tela de login
   end
 
   #Cadastro incorreto
