@@ -7,6 +7,6 @@ Funcionalidade: Solicitação de companhia
 
 @solicitacao
 Cenario: Solicitar companhia
-    Dado que estou autenticado "cliente@email.com" e "123456"
+    Dado que estou autenticado "lucas@gamil.com" e "12345678"
     Quando agendo um servio com um parceiro
     Entao vejo os detalhes do servico
