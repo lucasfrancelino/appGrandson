@@ -18,6 +18,8 @@ Dado('que eu acesso a tela de Cadastro') do
   Entao('vejo na tela de Home os parceiros disponiveis') do
     @clliente.avancar
     #app com erro, quando termina o cadastro ele volta pra a tela de login
+    # elemento = find_element(id: "com.example.grandson:id/imgPerfilParceiro")
+    # expect(elemento.displayed?).to be true
   end
 
   #Cadastro incorreto

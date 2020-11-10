@@ -9,4 +9,4 @@ Funcionalidade: Cadastro de Cliente
 Cenario: Login
     Dado que eu digito "cliente@email.com" e "123456"
     Quando clico em Entrar 
-    Entao posso solicitar um parceiro disponivel
+    Entao posso ver um parceiro disponivel

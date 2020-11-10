@@ -6,14 +6,14 @@ Funcionalidade: Cadastro de Cliente
     Posso registrar meus dados na plataforma Grandson
 
 @cadastro
-Cenario: Cadastro de cliente correto
+Cenario: Cadastro de cliente real
     Dado que eu acesso a tela de Cadastro
     Quando informo os dados pessoais
     E informo os dados de pagamento de um cartao de credito
     Entao vejo na tela de Home os parceiros disponiveis
 
 
-@cadastro
+# @cadastro
 Cenario: Cadastro de cliente fake
     Dado que eu acesso a tela de Cadastro
     Quando informo os dados pessoais fake

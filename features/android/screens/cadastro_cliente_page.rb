@@ -28,7 +28,7 @@ class CadastroCliente
     end
 
     def cliente_fisico
-        find_element(xpath: @nomeInput).send_keys("Lucas Francelino")
+        find_element(xpath: @nomeInput).send_keys("Robo Automação")
         find_element(xpath: @email).send_keys("lucas@gamil.com")
         find_element(xpath: @telefone).send_keys("61985934110")
         find_element(xpath: @senha1).send_keys("12345678")
