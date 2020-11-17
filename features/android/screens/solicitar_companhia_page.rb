@@ -8,7 +8,9 @@ class SolicitarCompanhia
     end
 
     def solicitar_parceiro
+        sleep 10
         find_element(id: "com.example.grandson:id/NomeParceiro").click
+        sleep 10
         find_element(id: "com.example.grandson:id/bt_agendar").click
         find_element(id: "com.example.grandson:id/textInputData").click
         find_element(xpath: @data_novembro30).click
