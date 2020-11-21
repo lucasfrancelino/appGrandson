@@ -7,7 +7,7 @@ Funcionalidade: Agendamento com parceiros
     Posso acessar a lista de parceiros com agendamento marcado
 
 Contexto: Agendamento
-    Dado que estou autenticado "lucas@gamil.com" e "12345678"
+    Dado que estou autenticado "lucas@email.com" e "12345678"
     Quando acesso servicos agendados
 
 # @agendamento
@@ -19,7 +19,7 @@ Cenario: Detalhar agendamento
     E clico em um pareiro
     Entao posso ver os detalhes do meu agendamento
 
-# @agendamento
+@agendamento
 Cenario: Cancelar agendamento
     E clico em um pareiro
     Entao posso cancelar meu agendamento
