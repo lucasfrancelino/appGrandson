@@ -1,5 +1,6 @@
 require 'faker'
 require 'cpf_faker'
+require 'base64'
 
 class CadastroCliente
     def initialize
@@ -28,11 +29,12 @@ class CadastroCliente
     end
 
     def cliente_fisico
-        find_element(xpath: @nomeInput).send_keys("Robo Automação")
-        find_element(xpath: @email).send_keys("lucas@gamil.com")
-        find_element(xpath: @telefone).send_keys("61985934110")
+        find_element(xpath: @nomeInput).send_keys Faker::Games::Pokemon.name
+        find_element(xpath: @email).send_keys Faker::Internet.email
+        find_element(xpath: @telefone).send_keys Faker::Number.number(digits: 11)
         find_element(xpath: @senha1).send_keys("12345678")
         find_element(xpath: @senha2).send_keys("12345678")
+        # page.save_screenshot('DadosCliente.png')
         find_element(xpath: @btnAvancar).click
         find_element(xpath: @cep).send_keys("72231609")
         scroll_to("Complemento", scrollable_index = 0)

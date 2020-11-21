@@ -10,7 +10,6 @@ Quando('clico em Entrar') do
 end
 
 Entao('posso ver um parceiro disponivel') do
-  # @login.solicitar_parceiro
   elemento = find_element(id: "com.example.grandson:id/searchParceiro")
   expect(elemento.displayed?).to be true
 end

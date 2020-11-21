@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Cadastro de Cliente
+Funcionalidade: Login de Cliente
     Para que eu possa realizar login
     Sendo um usuário Cliente devidamente cadastrado no aplicativo
     Posso acessar a plataforma Grandson

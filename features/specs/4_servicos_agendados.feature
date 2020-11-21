@@ -1,6 +1,6 @@
 #language: pt
 
-@agendamento
+# @agendamento
 Funcionalidade: Agendamento com parceiros
     Para que eu possa ver meus agendamentos
     Sendo um usuário Cliente devidamente cadastrado no aplicativo

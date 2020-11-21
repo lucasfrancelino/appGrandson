@@ -1,10 +1,11 @@
-
+require 'base64'
 Before do
     driver.start_driver
-    # manage.timeouts.implicit_wait = 25
-    # driver.execute_script('mobile:deepLink', { url: 'exp://192.168.0.20:19000', package: 'com.example.grandson'})
 end
 
 After do
+    screenshot = driver.screenshot_as(:png)
+    attach(screenshot, "image/png")
+
     driver.quit_driver
 end
